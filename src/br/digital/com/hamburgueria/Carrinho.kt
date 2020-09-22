@@ -15,9 +15,9 @@ class Carrinho() {
 
     //calcula valor total do carrinho
     fun valorTotal(): Double{
+        total = 0.0
         listaProdutos.forEach {
             total += it.preco
-            println("produto ${it.nome} de preço ${it.preco} valor total $total")
         }
         return total
     }

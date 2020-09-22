@@ -8,10 +8,11 @@ fun main() {
     val produto4 = Produto("sor Davos", 22.50)
     val produto5 = Produto("hidromel", 6.0)
 
+    println("\n\tBem vindo a HAMBURGUERIA\n")
+
     carrinho.adicionarProduto(produto3, produto1, produto5)
 
-    //carrinho.mostraCarrinho()
-
+    carrinho.mostraCarrinho()
     println("\nVAlor Total da compra: ${carrinho.valorTotal()}\n\n")
 
     println("----------------------------\n")
@@ -24,18 +25,17 @@ fun main() {
 
     carrinho.adicionarProduto(comboStarWar, comboGot)
 
-    //carrinho.mostraCarrinho()
+    carrinho.mostraCarrinho()
     println("\nVAlor Total da compra: ${carrinho.valorTotal()}\n\n")
 
     println("----------------------------\n")
 
-    val comboFamilia = ComboFamiliar("combo familia", 0.0)
+    val comboFamilia = ComboFamiliar("Combo Familia", 0.0)
     comboFamilia.adicionarCombo(comboGot, comboStarWar)
 
     carrinho.adicionarProduto(comboFamilia)
 
-    //carrinho.mostraCarrinho()
-
+    carrinho.mostraCarrinho()
     println("\nVAlor Total da compra: ${carrinho.valorTotal()}\n\n")
 
     println("----------------------------")
